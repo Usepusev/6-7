@@ -13,7 +13,7 @@ def check(katet1, katet2, bl):
             bl = False
             return [katet1, katet2, bl, res]
     except ValueError:
-        res="Вы ввели не число!!!!"
+        res="Вы ввели не число!"
         katet1 = ""
         katet2 = ""
         bl = False
