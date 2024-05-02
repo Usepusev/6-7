@@ -1,0 +1,20 @@
+import module, check
+
+while True:
+    katet1 = input('Введите первый катет: ')
+    katet2 = input('Введите второй катет: ')
+    bl = False
+    
+    katet1, katet2, bl, res = check.check(katet1, katet2, bl)
+    while bl != True:
+        print(res)
+        katet1 = input('Введите первый катет: ')
+        katet2 = input('Введите второй катет: ')
+        katet1, katet2, bl, res = check.check(katet1, katet2, bl)
+
+    gip = module.gip(katet1, katet2)
+
+    print(f"Гипотенуза равна - {gip:.2f}")
+    
+    otvet = input('Вы хотите продолжить? Если да, то введите "Y", если нет, то введите "N": ')
+    if otvet != 'Y': break
