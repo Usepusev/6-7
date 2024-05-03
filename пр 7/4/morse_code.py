@@ -9,6 +9,7 @@ MORSE_CODE_DICT = {
 }
 
 def text_to_morse(text):
+    # Функция переводит символы в точки и тире по азбуке морзе
     morse_code = ''
     for char in text.upper():
         if char in MORSE_CODE_DICT:

@@ -3,6 +3,7 @@ import exception_handler
 import word_processor
 
 def main():
+    # Основная функция программы. Ввод слов в массив, вызов функции удаления слов и исключений
     try:
         words = []
         while True:

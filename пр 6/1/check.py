@@ -1,4 +1,5 @@
 def check(katet1, katet2, bl):
+    #  Функция проверки введёных переменных на допустимость к расчётам
     try:
         katet1 = float(katet1)
         katet2 = float(katet2)

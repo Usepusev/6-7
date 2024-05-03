@@ -2,6 +2,7 @@ import exceptions
 import coin_combinations
 
 def main():
+    # Основная функция программы. Ввод значений, подсчёт, вызов функции расчёта
     while True:
         try:
             target_sum = float(input("Введите сумму: $"))

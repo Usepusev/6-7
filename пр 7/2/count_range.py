@@ -7,8 +7,6 @@ def count_range(numbers, min_bound, max_bound):
         max_bound (int): Максимальная граница.
     Returns:
         Целое число: Количество элементов.
-    Raises:
-        InvalidInputError: Если ввод остался пустым или значения чисел введены неправильно.
     """
     if not numbers:
         raise InvalidInputError("Ввод пуст")

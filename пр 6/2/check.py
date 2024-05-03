@@ -1,4 +1,5 @@
 def check(points, bl):
+    # Фугкцтя проверки введённых значений на допустимость расчётов
     try:
         for i in range(len(points)):
             points[i] = float(points[i])

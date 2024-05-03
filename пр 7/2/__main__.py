@@ -3,6 +3,7 @@ import count_range
 
 def main():
     while True:
+    # Основная функция программы. Ввод значений, вызов функции подсчёта чисел и исключений
         try:
             list_input = input("Введите список чисел (разделённый запятыми): ")
             list_numbers = [int(x) for x in list_input.split(",")]

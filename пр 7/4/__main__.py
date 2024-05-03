@@ -2,6 +2,7 @@ import exceptions
 import morse_code
 
 def main():
+    # Основная функция программы. Ввод значений, вызов функции перевода на морзянку и исключений
     while True:
         try:
             user_input = input("Введите текст для шифрования в азбуке Морзе: ")

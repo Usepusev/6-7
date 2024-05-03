@@ -2,6 +2,7 @@ import exceptions
 import reverse_lookup
 
 def main():
+    # Основная функция программы. Создание словаря, ввод значения, вызов функции поиска и исключений
     while True:
         try:
             dictionary = {"a": 1, "b": 2, "c": 1, "d": 3, "e": 1, "f":""}
