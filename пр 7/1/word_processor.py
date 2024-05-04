@@ -3,7 +3,7 @@ def get_unique_words(words):
     """
     Возвращает список уникальных слов.
     Args:Список слов
-    Returns:Список уникальных слов
+    Returns:unique_words Список уникальных слов
     """
     unique_words = []
     for word in words:
