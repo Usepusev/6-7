@@ -12,4 +12,4 @@ def reverse_lookup(dictionary, value_to_search):
         return 1  # Error code: invalid dictionary
     if value_to_search is None:
         return 2  # Error code: invalid value to search
-    return [key for key, value in dictionary.items() if value == value_to_search]
+    return [key for key, value in dictionary.items() if str(value) == str(value_to_search)]
