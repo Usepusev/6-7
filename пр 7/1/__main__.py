@@ -1,13 +1,12 @@
 # main.py
 import exception_handler
 import word_processor
-
+import runagain
 def main():
     # Основная функция программы. Ввод слов в массив, вызов функции удаления слов и исключений
     # words(list) - список слов для обработки
     # unique_words - список уникальных слов
     # word(str) - переменная для добавления слова в список или пропуска, если слово уже есть
-    # response(str) - переменная для запуска программы заново
     try:
         words = []
         while True:
@@ -27,6 +26,4 @@ def main():
 if __name__ == "__main__":
     while True:
         main()
-        response = input("Вы хотите начать заново? (y/n): ")
-        if response.lower() != "y":
-            break
+        runagain.runagain()

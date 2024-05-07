@@ -1,4 +1,5 @@
 import module, check
+import runagain
 
 while True:
     # Основная функция программы. Ввод значений, вызов функции проверки значений, функции проверки существования треугольника
@@ -22,5 +23,4 @@ while True:
     if module.treug(a, b, c) == True: print("Такой треугольник существует!")
     else: print("Такого треугольника не существует!")
 
-    otvet = input('Вы хотите продолжить? Если да, то введите "Y", если нет, то введите "N": ')
-    if otvet != 'Y': break
+    runagain.runagain()

@@ -1,4 +1,5 @@
 import module, check
+import runagain
 
 while True:
     # Основная функция программы. Ввод значений, вызов функции проверки, функции расчёта
@@ -6,7 +7,6 @@ while True:
     # res - результат проверки
     # bl(bool) - переменная для проверки
     # mediana(float) - медиана из module
-    # otvet(str) - переменная для запуска программы заново
     points = input("Введите числа через пробел: ").split()
     bl = False
 
@@ -20,5 +20,4 @@ while True:
 
     print(f"Медиана последовательности: {mediana:.2f}")
 
-    otvet = input('Вы хотите продолжить? Если да, то введите "Y", если нет, то введите "N": ')
-    if otvet != 'Y': break
+    runagain.runagain()

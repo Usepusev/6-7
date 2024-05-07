@@ -1,5 +1,6 @@
 from exceptions import *
 import count_range
+import runagain
 
 def main():
     while True:
@@ -8,7 +9,6 @@ def main():
     # list_numbers(list) - переменная с массивом чисел полученным из введёного 
     # min_bound(int) и max_bound(int) - целочисленные переменные границ
     # result(int) - количество чисел в границах
-    # response(str) - переменная для запуска программы заново
         try:
             list_input = input("Введите список чисел (разделённый запятыми): ")
             list_numbers = [int(x) for x in list_input.split(",")]
@@ -22,9 +22,7 @@ def main():
             handle_exception(e)
         except KeyboardInterrupt:
             handle_keyboard_interrupt()
-        response = input("Вы хотите начать заново? (y/n): ")
-        if response.lower() != "y":
-            break
+        runagain.runagain()
 
 if __name__ == "__main__":
     main()

@@ -1,4 +1,5 @@
 import module, check
+import runagain
 
 while True:
     # Основная функция программы. Ввод значений, вызов функции проверки значений, функции расчёта
@@ -6,7 +7,6 @@ while True:
     # res(str) - результат проверки
     # bl(bool) - переменная для проверки
     # sredneesrednee(float) - среднее число
-    # otvet(str) - переменная для запуска программы заново
     points = input("Введите числа через пробел: ").split()
     bl = False
 
@@ -20,5 +20,4 @@ while True:
 
     print(f"Среднее чисел равно - {srednee:.2f}")
 
-    otvet = input('Вы хотите продолжить? Если да, то введите "Y", если нет, то введите "N": ')
-    if otvet != 'Y': break
+    runagain.runagain()

@@ -1,6 +1,6 @@
 import exceptions
 import coin_combinations
-
+import runagain
 def main():
     # Основная функция программы. Ввод значений, подсчёт, вызов функции расчёта
     # target_sum(float) - сумма для расчёта монетами
@@ -8,7 +8,6 @@ def main():
     # num_coins(int) - количество монет для расчёта суммы
     # coins(list, const) - массив возможных монет
     # combinations(list) - массив с комбинацией монет для размена
-    # response(str) - переменная для запуска программы заново
     while True:
         try:
             target_sum = float(input("Введите сумму: $"))
@@ -25,9 +24,7 @@ def main():
                     print(combination)
             else:
                 print(f"Нет, невозможно набрать ${target_sum:.2f} с помощью {num_coins} монет.")
-            response = input("Хотите начать с начала? (y/n): ")
-            if response.lower() != "y":
-                break
+            runagain.runagain()
         except ValueError:
             exceptions.handle_value()
         except KeyboardInterrupt:

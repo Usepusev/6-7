@@ -1,12 +1,11 @@
 import exceptions
 import reverse_lookup
-
+import runagain
 def main():
     # Основная функция программы. Создание словаря, ввод значения, вызов функции поиска и исключений
     # dictionary(list, const) - словарь с исходными значениями
     # value_to_search(str) - строковая переменная для поиска
     # result - ключи имеющие введённый ключ
-    # response(str) - переменная для запуска программы заново
     while True:
         try:
             dictionary = {"a": 1, "b": 2, "c": 1, "d": 3, "e": 1, "f":""}
@@ -20,9 +19,7 @@ def main():
             else:
                 print(f"Ключи с значением {value_to_search}: {result}")
 
-            response = input("Хотите начать с начала? (y/n): ")
-            if response.lower() != "y":
-                break
+            runagain.runagain()
         except KeyboardInterrupt:
             exceptions.handle_keyboard_interrupt()
         except Exception as e:
