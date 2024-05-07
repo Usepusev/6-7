@@ -9,5 +9,8 @@ def handle_exception(e):
 def handle_keyboard_interrupt():
     # Функция сдерживает ошибку клавиатуры(Ctrl+c) и выводит на экран причину
     print("Возникла ошибка клавиатуры. Работа программы остановлена.")
+def handle_memory():
+    # Функция сдерживает ошибку клавиатуры(Ctrl+c) и выводит на экран причину
+    print("Возникла ошибка памяти. Работа программы остановлена.")
 
-__all__ = ['handle_value', 'handle_exception', 'handle_keyboard_interrupt']
+__all__ = ['handle_value', 'handle_exception', 'handle_keyboard_interrupt', 'handle_memory']

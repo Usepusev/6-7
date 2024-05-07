@@ -25,6 +25,8 @@ def main():
             else:
                 print(f"Нет, невозможно набрать ${target_sum:.2f} с помощью {num_coins} монет.")
             runagain.runagain()
+        except MemoryError:
+            exceptions.handle_memory()
         except ValueError:
             exceptions.handle_value()
         except KeyboardInterrupt:

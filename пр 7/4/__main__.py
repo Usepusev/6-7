@@ -11,6 +11,8 @@ def main():
             morse_text = morse_code.text_to_morse(user_input)
             print(f"Шифр в азбуке Морзе: {morse_text}")
             runagain.runagain()
+        except MemoryError:
+            exceptions.handle_memory()
         except KeyboardInterrupt:
             exceptions.handle_keyboard_interrupt()
         except Exception as e:

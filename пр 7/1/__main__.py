@@ -15,9 +15,11 @@ def main():
                 break
             words.append(word)
         unique_words = word_processor.get_unique_words(words)
-        print("Unique words:")
+        print("Уникальные слова:")
         for word in unique_words:
             print(word)
+    except MemoryError:
+        exception_handler.handle_memory()  
     except Exception as e:
         exception_handler.handle_exception(e)
     except KeyboardInterrupt:
@@ -25,5 +27,5 @@ def main():
 
 if __name__ == "__main__":
     while True:
-        main()
-        runagain.runagain()
+            main()
+            runagain.runagain()

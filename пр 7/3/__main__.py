@@ -20,6 +20,8 @@ def main():
                 print(f"Ключи с значением {value_to_search}: {result}")
 
             runagain.runagain()
+        except MemoryError:
+            exceptions.handle_memory()
         except KeyboardInterrupt:
             exceptions.handle_keyboard_interrupt()
         except Exception as e:

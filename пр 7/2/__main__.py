@@ -16,6 +16,8 @@ def main():
             max_bound = int(input("Введите максимальную границу: "))
             result = count_range.count_range(list_numbers, min_bound, max_bound)
             print(f"Количество элементов [{min_bound}, {max_bound}]: {result}")
+        except MemoryError:
+            handle_memory()
         except ValueError:
             handle_value()
         except Exception as e:
